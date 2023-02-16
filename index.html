@@ -1,0 +1,809 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | OMP Security</title>
+    <link
+      href="/assets/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/navbar.css" />
+
+    <link rel="stylesheet" href="styles/front-page.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+  <body>
+    <main class="py-2 px-2 py-sm-3 px-sm-5">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="assets/icons/icon.png"
+              alt="OMP Logo"
+              width="60"
+              height="auto"
+              class="d-inline-block align-text-top"
+            />
+            <span class="mx-3">OMP</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="#navbar"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+          >
+            <span class="navbar-toggler-icon btn-close-white"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="announcements.html"
+                >
+                  Announcements
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  aria-current="page"
+                  data-bs-toggle="dropdown"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="personnel.html">Personnel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mission-vision.html"
+                      >Mission Vision</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="service-delivery-and-operations.html"
+                      >Service Delivery and Operations</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-guards.html" aria-current="page">
+                  Our Guards
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="hiring.html">
+                  Hiring
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="main-content d-flex align-items-center justify-content-center mx-3 my-3 h-75 flex-column"
+      >
+        <h1 class="h0 text-uppercase text-center" id="bigDescription">
+          Security & Investigation Agency, Inc.
+        </h1>
+        <p class="text-white" id="smallDescription">
+          We help, guide, serve and protect our clients by providing
+          comprehensive security services.
+        </p>
+        <a
+          type="button"
+          class="btn btn-warning text-uppercase btn-lg mt-5"
+          href="contact.html"
+        >
+          Get In Touch With Us
+        </a>
+      </div>
+    </main>
+
+    <section id="recent-announcements" class="py-2 px-2 py-sm-3 px-sm-5">
+      <div
+        class="mx-3 my-3 w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="section-title">Recent Announcements</h1>
+        <div
+          id="announcementCarousel"
+          class="carousel slide w-100 mb-3 mt-5 text-center"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div
+                  class="col-12 col-lg-6 d-flex justify-content-center align-content-center"
+                >
+                  <div
+                    id="announcementImage1"
+                    class="w-100 h-auto"
+                    style="
+                      background-image: url('/assets/images/announcements/sample-announcement.png');
+                    "
+                  ></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div
+                    id="announcementContent1"
+                    class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                  >
+                    <span class="fs-3 s-font service-title text-white my-3"
+                      >Submission of Monthly Disposition Report (MDR)
+                    </span>
+                    <p class="p">
+                      <span class="p">
+                        The submission of the MDR shall not be later than 15th
+                        day of the month for the previous month's report, hence,
+                        submission of MDR after 15th day shall be penalized in
+                        accordance with
+                      </span>
+                      <span
+                        class="text-decoration-underline text-white read-more"
+                        onclick="window.open('announcement-1')"
+                        title="Open announcement-1"
+                      >
+                        ... Read More →
+                      </span>
+                      <br />
+                    </p>
+                    <p class="p fw-bold">Posted June 20, 2022 at 5:06 PM</p>
+                    <a
+                      type="button"
+                      class="btn btn-light text-uppercase btn-lg mt-5"
+                      href="announcements#all-announcements"
+                    >
+                      VIEW MORE ANNOUNCEMENTS
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div
+                  class="col-12 col-lg-6 d-flex justify-content-center align-content-center"
+                >
+                  <div
+                    id="announcementImage2"
+                    class="w-100 h-auto"
+                    style="
+                      background-image: url('assets/images/announcements/sample-announcement2.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div
+                    id="announcementContent1"
+                    class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                  >
+                    <span class="fs-3 s-font service-title text-white my-3"
+                      >Turn Over Of Office Ceremony Of The PNP Supervisory
+                      Office For Security And Investigation Agencies (SOSIA)
+                    </span>
+                    <p class="p">
+                      <span class="p">
+                        TURN OVER OF OFFICE CEREMONY OF THE PNP SUPERVISORY
+                        OFFICE FOR SECURITY AND INVESTIGATION AGENCIES (SOSIA)
+                        BETWEEN OUTGOING C, SOSIA...
+                      </span>
+                      <span
+                        class="text-decoration-underline text-white read-more"
+                        onclick="window.open('announcement-1')"
+                        title="Open announcement-1"
+                      >
+                        ... Read More →
+                      </span>
+                      <br />
+                    </p>
+                    <p class="p fw-bold">Posted May 18, 2022 at 5:10 PM</p>
+                    <a
+                      type="button"
+                      class="btn btn-light text-uppercase btn-lg mt-5"
+                      href="announcements#all-announcements"
+                    >
+                      VIEW MORE ANNOUNCEMENTS
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div
+                  class="col-12 col-lg-6 d-flex justify-content-center align-content-center"
+                >
+                  <div
+                    id="announcementImage3"
+                    class="w-100 h-auto"
+                    style="
+                      background-image: url('/assets/images/announcements/sample-announcement3.jpg');
+                    "
+                  ></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div
+                    id="announcementContent1"
+                    class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                  >
+                    <span class="fs-3 s-font service-title text-white my-3"
+                      >Advisory - Prohibition of Private Security Programs By
+                      Non-Accredited PSTI
+                    </span>
+                    <p class="p">
+                      <span class="p"> </span>
+                      <span
+                        class="text-decoration-underline text-white read-more"
+                        onclick="window.open('announcement-1')"
+                        title="Open announcement-1"
+                      >
+                        ... Read More →
+                      </span>
+                      <br />
+                    </p>
+                    <p class="p fw-bold">Posted May 2, 2022 at 4:57 PM</p>
+                    <a
+                      type="button"
+                      class="btn btn-light text-uppercase btn-lg mt-5"
+                      href="announcements#all-announcements"
+                    >
+                      VIEW MORE ANNOUNCEMENTS
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators position-relative mt-5">
+            <button
+              type="button"
+              data-bs-target="#announcementCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#announcementCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#announcementCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-services" class="py-2 px-2 py-sm-3 px-sm-5">
+      <div
+        class="mx-3 my-3 w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="section-title">Our Services</h1>
+        <div class="w-100 row mx-0">
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service1"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service1_img_path: url('/assets/images/services/guarding-and-security-related-services.jpg');
+                background-position-y: 5%;
+              "
+              onclick="window.open('service-1')"
+              title="Open service-1"
+            >
+              <span class="fs-3 s-font service-title"
+                >Guarding and Security Related Services</span
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service2"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service2_img_path: url('/assets/images/services/security-training.jpg');
+                background-position: center;
+              "
+              onclick="window.open('service-2')"
+              title="Open service-2"
+            >
+              <span class="fs-3 s-font service-title"> Security Training </span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service3"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service3_img_path: url('/assets/images/services/vip-slash-executive-protection.jpg');
+                background-position-y: 30%;
+              "
+              onclick="window.open('service-3')"
+              title="Open service-3"
+            >
+              <span class="fs-3 s-font service-title">
+                VIP / Executive Protection
+              </span>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service4"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service4_img_path: url('/assets/images/services/detective-and-investigation-service.jpg');
+                background-position: center;
+              "
+              onclick="window.open('service-4')"
+              title="Open service-4"
+            >
+              <span class="fs-3 s-font service-title"
+                >Detective and Investigation Service</span
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service5"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service5_img_path: url('/assets/images/services/security-audit-and-survey.jpg');
+                background-position-y: 35%;
+              "
+              onclick="window.open('service-5')"
+              title="Open service-5"
+            >
+              <span class="fs-3 s-font service-title"
+                >Security Audit and Survey</span
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-3">
+            <div
+              id="service6"
+              class="d-flex justify-content-center align-content-center px-2"
+              style="
+                --service6_img_path: url('/assets/images/services/k9-unit.jpg');
+                background-position-y: 25%;
+              "
+              onclick="window.open('service-6')"
+              title="Open service-6"
+            >
+              <span class="fs-3 s-font service-title">K-9 Unit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-2 px-3 py-sm-3 px-sm-5 d-flex flex-col justify-content-center align-items-center"
+    >
+      <div class="mx-3 my-3 w-100">
+        <div class="row py-3">
+          <div class="col-12 col-xl-6">
+            <div class="text-center mb-5">
+              <h4 class="h4 text-uppercase text-white">About Us:</h4>
+              <hr />
+              <p class="p">
+                OMP Security & Investigation Agency Inc., is a duly organized
+                and licensed security agency, established in June 28, 1988. It
+                was formed mainly to help, guide, serve and protect its clients
+                through a business that provides comprehensive security
+                services.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-6 col-xl-12">
+                <div class="text-center mb-5">
+                  <h4 class="h4 text-uppercase text-white">Our Location:</h4>
+                  <hr />
+                  <p class="p">
+                    3877 Gen. Macabulos Corner Evangelista Sts., Brgy., Bangkal,
+                    Makati City
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-6 col-xl-12">
+                <div class="text-center mb-5">
+                  <h4 class="h4 text-uppercase text-white">Office Hours:</h4>
+                  <hr />
+                  <p class="p">
+                    Mon - Sat: 8AM - 5PM <br />
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="text-center">
+              <h4 class="h4 text-uppercase text-white">Contact Us:</h4>
+              <hr />
+              <div class="row s-font px-3 mb-3">
+                <table class="contact-numbers">
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <p class="p">
+                          <span class="text-uppercase fw-bold"
+                            >Tel. Number:</span
+                          ><br />
+                          <span>8877 - 8676</span>
+                        </p>
+                        <p class="p">
+                          <span class="text-uppercase fw-bold">Fax:</span><br />
+                          <span>8877 - 8677</span>
+                        </p>
+                      </td>
+                      <td class="text-center">
+                        <p class="p text-uppercase">
+                          <span class="text-uppercase fw-bold"
+                            >Mobile Numbers:</span
+                          ><br /><span>+63 920 838 5399</span><br /><span
+                            >+63 906 214 3513
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row s-font px-3 d-none d-md-block">
+                <table class="contact-emails">
+                  <thead>
+                    <th>
+                      <span class="text-uppercase fw-bold">Departments:</span>
+                    </th>
+                    <th>
+                      <span class="text-uppercase fw-bold">Contact:</span>
+                    </th>
+                  </thead>
+                  <tr class="text-center">
+                    <td>General Contact</td>
+                    <td>
+                      <span class="email-toggle">mail@ompsecurity.com</span>
+                      <!-- <div class="btn-group" id="email-popover">
+                          <a
+                            class="dropdown-toggle email-dropdown"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            mail@ompsecurity.com
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                href="https://compose.mail.yahoo.com/?to=mail@ompsecurity.com&subject=subject&body=body"
+                                >Open with Yahoo Mail</a
+                              >
+                            </li>
+                          </ul>
+                        </div> -->
+
+                      <br />
+                      <span class="email-toggle">arsiasec@gmail.com</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Marketing Dept</td>
+                    <td>
+                      <span class="email-toggle"
+                        >marketing@ompsecurity.com</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Human Resources Dept</td>
+                    <td>
+                      <span class="email-toggle">hr@ompsecurity.com </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Payroll and Remittance Dept</td>
+                    <td>
+                      <span class="email-toggle">finance@ompsecurity.com </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Billing and Collection Dept</td>
+                    <td>
+                      <span class="email-toggle"
+                        >financebilling@ompsecurity.com
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Logistics Dept</td>
+                    <td>
+                      <span class="email-toggle"
+                        >logistics@ompsecurity.com
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Administration Dept</td>
+                    <td>
+                      <span class="email-toggle">admin@ompsecurity.com</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="mb-md-5 contact-accordion d-block d-md-none">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        General Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle"> mail@ompsecurity.com </span>
+                        <span class="email-toggle">ompsec@gmail.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Marketing Department Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle"
+                          >marketing@ompsecurity.com</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Human Resources Dept Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle">hr@ompsecurity.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Payroll and Remittance Dept Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle"
+                          >finance@ompsecurity.com</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        Billing and Collection Dept Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle"
+                          >financebilling@ompsecurity.com</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        Logististics Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingSix"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle"
+                          >logistics@ompsecurity.com</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                        Administration Contact
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSeven"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingSeven"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div
+                        class="accordion-body d-flex flex-column justify-content-center"
+                      >
+                        <span class="email-toggle">admin@ompsecurity.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START: Email Popover -->
+    <div
+      class="btn-group d-none d-flex justify-content-center"
+      id="email-popover"
+    >
+      <a
+        class="dropdown-toggle email pointer-event text-white"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        mail@ompsecurity.com
+      </a>
+      <ul class="dropdown-menu">
+        <li class="text-center px-3"></li>
+      </ul>
+    </div>
+    <!-- Email Popover :END -->
+
+    <footer class="py-2 px-2 px-sm-5">
+      <div class="d-flex justify-content-between mx-3">
+        <div>
+          <span>© 2022 All Rights Reserved.</span>
+        </div>
+        <div>
+          <span>
+            Designed and developed by
+            <a href="https://lonewanderer27.github.io" target="_blank">Jay</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="/assets/bootstrap/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    ></script>
+    <script src="email-popover.js"></script>
+  </body>
+</html>
